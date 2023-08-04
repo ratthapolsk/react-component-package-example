@@ -1,7 +1,21 @@
 {
   "name": "library-package-example",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**",
+    "styles/**"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "dependencies": {
     "@types/node": "^16.18.39",
     "@types/react": "^18.2.18",
@@ -30,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tsup": "^7.2.0"
   }
 }
