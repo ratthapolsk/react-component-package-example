@@ -6,8 +6,7 @@
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "files": [
-    "dist/**",
-    "styles/**"
+    "dist/**"
   ],
   "exports": {
     ".": {
@@ -25,7 +24,8 @@
     "typescript": "^4.9.5"
   },
   "scripts": {
-    "build": "pnpm run clean && tsup src/index.ts --format cjs,esm --dts --clean"
+    "build": "pnpm run clean && tsup src/index.ts --format cjs,esm --dts",
+    "clean": "rimraf dist"
   },
   "eslintConfig": {
     "extends": [
@@ -33,6 +33,8 @@
     ]
   },
   "devDependencies": {
+    "rimraf": "^5.0.1",
+    "tslib": "^2.6.1",
     "tsup": "^7.2.0"
   }
 }
