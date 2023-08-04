@@ -1,7 +1,35 @@
 {
-  "name": "@ratthapolsk/library-package-example",
-  "version": "0.1.0",
+  "name": "@ratthapolsk/react-component-package-example",
+  "version": "0.0.1",
   "private": false,
+  "description": "React Component Package Example",
+  "author": "Ratthapol Sakonchaiphraisan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ratthapolsk/react-component-package-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ratthapolsk/react-component-package-example/issues"
+  },
+  "homepage": "https://github.com/ratthapolsk/react-component-package-example#readme",
+  "keywords": [
+    "React",
+    "React Component",
+    "Example Repository"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "browserslist": [
+    "> 7%"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "branches": [
+      "main"
+    ]
+  },
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
